@@ -1,0 +1,460 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{  
+    font-family: 'Poppins', sans-serif;
+}
+/* NAVBAR*/
+   .navbar .nav-link{
+    color: #6A7271;
+   }
+   .nav-link:hover{
+    text-decoration: underline #6A7271 3px;  
+    text-underline-offset: 10px; 
+   }
+   .navbar .nav-link:hover{
+    color: #6A7271;
+   }
+   .navbar-toggler{
+    border: 2px solid #AA2D06!important;
+    color: #AA2D06!important;
+    background-color: #AA2D06;
+   }
+   .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
+   }
+   .navbar-toggler:focus{
+    box-shadow: none!important;
+   }
+/* HOME PAGE INTRODUCTION*/
+  .bg-intro{
+    background-image: url("/images/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+  .bg-intro h1{
+    color: #fff;
+    padding-left: 50px;
+    background-color: black;
+  }
+/*HOME PAGE SPECIALS*/
+.card img{
+    height: 70%;
+}
+.card-title{
+    padding-top: 10px;
+}
+.card button{
+    width: 100%;
+    background-color: #AA2D06;
+}
+.card button:hover{
+    border-color: #AA2D06;
+    color: #AA2D06!important;
+}
+.card a{
+    color: #fff;
+    text-decoration: none;
+}
+.card button:hover a{
+    color: #AA2D06;
+}
+    /*RIBBON*/
+   .ribbon {
+    font-size: 16px !important;
+    font-weight: 600!important;
+    width: 50%;
+    position: relative;
+    background: #AA2D06;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em; 
+    margin: 2em auto 3em; 
+   }
+   .ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #AA2D06;
+    z-index: -1;
+   }
+   .ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+   }
+   .ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+   }
+   .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #AA2D06 transparent transparent transparent;
+    bottom: -1em;
+   }
+   .ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+   }
+   .ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+   }
+   .non-semantic-protector { position: relative; z-index: 1; }
+
+/*HOME PAGE EVENTS*/
+  .bg-overlay{
+    background-image: url("/images/14.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position-y: bottom;
+  }
+  .bg-overlay h2{
+    color: #fff;
+    padding-left: 50px;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .carousel-inner .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+  }
+  .carousel-item{
+    transition: transform .1s ease-in-out!important;
+  }
+  .events h2{
+    padding-top: 50px;
+  }
+  .events p{
+    padding-top: 30px;
+    text-align: justify;
+  }
+  .left-event{
+    padding-right: 50px;
+  }
+  .left-event button{
+    width: 100%;
+    background-color: #AA2D06;
+    margin-top: 30px;
+}
+.left-event button:hover{
+    border-color: #AA2D06;
+    color: #AA2D06!important;
+}
+.left-event a{
+    color: #fff;
+    text-decoration: none;
+}
+.left-event button:hover a{
+    color: #AA2D06;
+}
+
+  
+/*FOOTER  */
+.social-footer-right ul li{
+    display: inline-flex;
+}
+.social-footer-right .bi{
+    color: black;
+}
+.social-footer-right .bi:hover{
+    color: #AA2D06;
+}
+.lemon-footer img{
+    height: 15vh;
+}
+/*MENU PAGE*/
+   /*Intro*/
+   .menu-intro{
+    background-image: url("/images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .menu-intro h1{
+    color: #fff;
+    padding-left: 50px;
+    background-color: black;
+  }
+  /*Menu*/
+  .sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    margin-top: 60px;
+    padding-top: 70px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .sidebar li:hover{
+    text-decoration: underline #6A7271 3px;  
+    text-underline-offset: 5px; 
+  }
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .choices-item {
+    margin-bottom: 10px;
+  }
+/*CONTACT PAGE*/
+     /*Intro*/
+     .contact-intro{
+        background-image: url("/images/20.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        background-position: center; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .contact-intro h1{
+        color: #fff;
+        padding-left: 50px;
+        background-color: black;
+      }
+      .contact-left{
+        padding-left: 100px;
+      }
+      .contact-left ul{
+        list-style-type: none;
+        padding-left: 0px!important;
+      }
+      .contact-left li{
+        padding-bottom: 20px;
+      }
+      .contact-left h5{
+        text-decoration: underline #6A7271 3px;  
+        text-underline-offset: 5px; 
+      }
+      /*Reservation*/
+      .banner{
+        min-height: 80vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/2.jpg") center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding-bottom: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+       }
+       .card-container{
+        display: grid;
+        grid-template-columns: 450px 450px;
+       }
+       .card-img{
+        background: url("/images/card-img.jpg") center/cover no-repeat;
+       }
+       .banner h2{
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+       }
+       .card-content{
+        background: #fff;
+        height: 350px;
+       }
+       .card-content h3{
+        text-align: center;
+        color: #000;
+        padding: 25px 0 10px 0;
+        font-size: 26px;
+        font-weight: 500;
+       }
+       .form-row{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        }
+        form select, form input{
+        display: block;
+        width: 100%;
+        margin: 15px 12px;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-weight: 300;
+        }
+        form input[type = text], form input[type = number], form input::placeholder, select{
+        color: #6A7271;
+        }
+        form input[type = submit]{
+        color: #fff;
+        background: #AA2D06;
+        padding: 12px 0;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        form input[type = submit]:hover{
+        opacity: 0.9;
+        }
+    @media(max-width: 992px){
+        .card-container{
+            grid-template-columns: 100%;
+            width: 100vw;
+        }
+        .card-img{
+            height: 330px;
+        }
+    }
+/*TABLET VERSION*/
+@media screen and (min-width:321px) and (max-width:821px) {
+    /*Specials*/
+    .card p{
+        display: none;
+    }
+    .card h5{
+        text-align: center;
+    }
+    .card button{
+        text-align: center;
+    }
+    /*Events*/
+    .events p{
+        display: none;
+    }
+    /*Map*/
+    .gmap_iframe, .mapouter{
+        width: 700px!important;
+        text-align: left!important;
+     }
+     #gmap-iframe{
+        width: 700px!important;
+     }
+     .gmap_canvas{
+        width: 700px!important;
+     }
+     .gmap_canvas a{
+        display: none;
+     }
+     .contact-map{
+        padding-top: 50px!important;
+     }
+}
+/*MOBILE VERSION*/
+  @media screen and (max-width:576px){
+    /* Navbar */
+    .navbar>.container-fluid{
+      margin-right: 1rem!important;
+      margin-left: 1rem!important;
+      padding-right: 0%;
+      padding-left: 0%;
+    }
+    /*Specials*/
+    .specials{
+        padding-top: 0px!important;
+    }
+    .specials .row{
+        padding-top: 0px!important;
+    }
+    .card img{
+        height: 200px;
+    }
+    /*Events*/
+    .event-section{
+        padding: 0px!important;
+    }
+    .events{
+        padding-top: 0px!important;
+    }
+    .left-event button{
+        display: none;
+        padding-bottom: 50px!important;
+    }
+    .mobile-btn{
+        display: block!important;
+        width: 100%;
+        background-color: #AA2D06;
+    margin-top: 30px;
+    margin-bottom: 50px!important;
+    }
+    .mobile-btn:hover{
+        border-color: #AA2D06;
+        color: #AA2D06!important;
+    }
+    .mobile-btn a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .mobile-btn:hover a{
+        color: #AA2D06;
+    }
+    
+    /*Footer*/
+    .lemon-footer{
+     display: none;
+    }
+    footer hr{
+     display: none;
+    }
+    footer ul{
+     display: flex;
+    }
+    .social-footer-left{
+     padding-left: 0%!important;
+     padding-right: 5px!important;
+    }
+    .social-footer-right{
+     padding-left: 5px!important;
+     padding-right: 5px!important;
+    }
+    /*Map*/
+    .mapouter{
+       padding-left: 30px;
+    }
+     .gmap_iframe, .mapouter{
+        width: 300px!important;
+        text-align: left!important;
+     }
+     #gmap-iframe{
+        width: 300px!important;
+     }
+     .gmap_canvas{
+        width: 300px!important;
+     }
+     .gmap_canvas a{
+        display: none;
+     }
+     .contact-map{
+        padding-top: 50px!important;
+     }
+     /*Reservation*/
+     .banner h2{
+        padding-top: 40px;
+        padding-bottom: 0px!important;
+     }
+  }
+  

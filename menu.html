@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Little Lemon Menu</title>
+</head>
+<body>
+      <!--NAVBAR-->
+      <header>
+       <nav class="navbar navbar-dark navbar-expand-lg bg-light sticky-top">
+        <div class="container-fluid mx-5 my-2">
+          <a class="navbar-brand " href="#">
+            <img src="/logo.png" alt="Logo" width="100%" height="40" class="d-inline-block align-text-top">
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarlittlemon" aria-controls="navbarlittlemon" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarlittlemon">
+            <ul class="navbar-nav mx-auto  me-auto  ">
+              <li class="nav-item px-3 ">
+                <a class="nav-link" aria-current="page" href="index.html">Home Page</a>
+              </li>
+              <li class="nav-item px-3 ">
+                <a class="nav-link"  href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+      </header>
+    <main>
+      <!--INTRODUCTION-->
+            <section>
+               <div class="menu-intro">
+                    <h1>LITTLE LEMON <br>MENU</h1>
+               </div>
+            </section>
+      <!--MENU-->
+      <section style="padding-bottom: 50px;">
+        <div class="container d-flex">
+            <div class="sidebar">
+              <ul>
+                <li class="menu-option" onclick="showChoices('option1')">Breakfast</li>
+                <li class="menu-option" onclick="showChoices('option2')">Soups</li>
+                <li class="menu-option" onclick="showChoices('option3')">Salads</li>
+                <li class="menu-option" onclick="showChoices('option4')">Burgers</li>
+                <li class="menu-option" onclick="showChoices('option5')">Pastas</li>
+                <li class="menu-option" onclick="showChoices('option6')">Wraps</li>
+                <li class="menu-option" onclick="showChoices('option7')">Pizzas</li>
+                <li class="menu-option" onclick="showChoices('option8')">Main Dishes</li>
+                <li class="menu-option" onclick="showChoices('option9')">Desserts</li>
+                <li class="menu-option" onclick="showChoices('option10')">Cold Drinks</li>
+                <li class="menu-option" onclick="showChoices('option11')">Non Alcoholic Cocktails</li>
+                <li class="menu-option" onclick="showChoices('option12')">Alcoholic Beverages</li>
+              </ul>
+            </div>
+            <div class="content">
+              <div id="choices">
+                <div class="non-semantic-protector"> 
+                    <h1 class="ribbon">
+                        <strong class="ribbon-content">Breakfast</strong>
+                     </h1>
+                 </div>
+                <div class="container text-center">
+                    <div class="row" style="display: flex; align-items: center;">
+                      <div class="col">
+                       <h5>Omelette</h5>
+                      </div>
+                      <div class="col">
+                        <h5>10$</h5>
+                      </div>
+                      <div class="col">
+                        <img src="/images/omelette.jpg" alt="" width="175" height="175">
+                      </div>
+                    </div>
+                      <hr class="solid">
+                      <div class="row" style="display: flex; align-items: center;">
+                          <div class="col">
+                           <h5>French Toast</h5>
+                          </div>
+                          <div class="col">
+                            <h5>10$</h5>
+                          </div>
+                          <div class="col">
+                            <img src="/images/french-toast.jpg" alt="" width="175" height="175">
+                          </div>
+                        </div>
+                        <hr class="solid">
+                        <div class="row" style="display: flex; align-items: center;">
+                            <div class="col">
+                             <h5>Pancake</h5>
+                            </div>
+                            <div class="col">
+                              <h5>10$</h5>
+                            </div>
+                            <div class="col">
+                              <img src="/images/pancake.jpg" alt="" width="175" height="175">
+                            </div>
+                          </div>
+                          
+                  </div>
+                <!-- Choices for selected option will be dynamically inserted here -->
+              </div>
+            </div>
+          </div>
+      </section>
+   
+    </main>
+    <hr class="solid">
+       <!--FOOTER-->
+            <footer class="text-center text-lg-start bg-white text-muted">
+    <section>
+      <div class="lemon-footer container text-center text-md-start mt-5">
+        
+        <div class="row mt-3">
+       
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        
+            <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem  text-secondary"></i>Little Lemon Restaurant
+              </h6>
+           <img src="Asset 20@4x.png" alt="">
+          </div>
+         
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+       
+            <h6 class="text-uppercase fw-bold mb-4">
+                Little Lemon Restaurant
+            </h6>
+            <p>
+                <a href="index.html" class="text-reset">Home Page</a>
+              </p>
+            <p>
+              <a href="menu.html" class="text-reset">Menu</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-reset">Contact</a>
+            </p>
+          </div>
+         
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+           
+            <h6 class="text-uppercase fw-bold mb-4">
+              Privacy Center
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Cooking Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Cookie Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Term of Use</a>
+            </p>
+          </div>
+          
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home text-secondary"></i> Austin,Texas US</p>
+            <p>
+              <i class="fas fa-envelope text-secondary"></i>
+              info@example.com
+            </p>
+          </div>
+         
+        </div>
+        
+      </div>
+    
+  <hr class="solid">
+    <!-- Copyright -->
+    <div class="social-footer d-flex justify-content-between">
+        <div class="social-footer-left px-5">
+            © 2023 Copyright: 
+            <a class="text-reset fw-bold" href="https://github.com/pelindalkiran">Pelin DALKIRAN</a>
+          </div>
+          <div class="social-footer-right px-5">
+              <ul >
+                  <li class="p-2" ><a href="#">
+                    <i class="bi bi-facebook " aria-hidden="true" style="font-size: 2vh;"></i></a></li>
+                  <li class="p-2"><a href="https://www.instagram.com/pelindalkiran/">
+                    <i class="bi bi-instagram" aria-hidden="true" style="font-size: 2vh;"></i>
+                </a>
+                </li>
+                  <li class="p-2">
+                    <a href="https://github.com/pelindalkiran"><i class="bi bi-github" aria-hidden="true" style="font-size: 2vh;"></i></a></li>
+                  
+              </ul>
+          </div>
+    </div>
+</section>
+            </footer>
+            <script src="script.js"></script>
+            <!--
+              https://www.freepik.com/free-photo/tasty-fresh-appetizing-italian-food-ingredients-dark-background_1301432.htm#&position=25&from_view=undefined
+              https://www.freepik.com/free-photo/pepperoni-toast-with-cheese-served-win-bamboo-plate_7734417.htm#&position=19&from_view=undefined
+              https://www.freepik.com/free-photo/omelette-with-cheese-tomatoes-plate_10374266.htm#&position=21&from_view=undefined
+              https://www.freepik.com/free-photo/front-view-sweet-pancakes-tower-arrangement_9906967.htm#&position=17&from_view=undefined
+              https://www.freepik.com/free-photo/garlic-soup-topped-with-croutons-bowl-wooden-table_24188493.htm#&position=15&from_view=undefined
+              https://www.freepik.com/free-photo/lentil-soup-with-chopped-herbs-crackers_5588424.htm#&position=13&from_view=undefined
+              https://www.freepik.com/free-photo/tomato-soup-with-green-table_6285313.htm#&position=11&from_view=undefined
+              https://www.freepik.com/free-photo/food-meal-cuisine-dining-party-concept_2861775.htm#&position=9&from_view=undefined
+              https://www.freepik.com/free-photo/side-view-double-cheeseburger-with-grilled-beef-patties-cheese-lettuce-leaf-burger-buns_8196280.htm#&position=33&from_view=undefined
+              https://www.freepik.com/free-photo/noodles-with-chicken-sauce-with-sesame_6356102.htm#&position=37&from_view=undefined
+              https://www.freepik.com/free-photo/side-view-shawarma-with-fried-potatoes-board-cookware_7727101.htm#&position=4&from_view=user
+              https://www.freepik.com/free-photo/freshly-baked-gourmet-pizza-rustic-wooden-table-generated-by-ai_41570098.htm#&position=17&from_view=user
+              https://www.freepik.com/free-photo/grilled-beef-steak-dark-wooden-surface_14454667.htm#&position=11&from_view=user
+              https://www.freepik.com/free-photo/tart-with-strawberries-whipped-cream-decorated-with-mint-leaves-top-view_7698192.htm#&position=14&from_view=user
+              https://www.freepik.com/free-photo/ice-tea-with-mint_10095295.htm#&position=3&from_view=user
+              https://www.freepik.com/free-photo/rose-exotic-cocktails-fruits-female-hand_8609573.htm#&position=2&from_view=user
+
+            -->
+</body>
+</html>
